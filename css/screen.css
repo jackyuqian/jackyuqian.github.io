@@ -23,12 +23,12 @@ body {
 }
 
 h1 {
-  font-size: 100%;
+  font-size: large;
   margin-bottom: 1em;
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 70%;
+  font-size: medium;
 }
 
 p {
