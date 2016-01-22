@@ -16,8 +16,7 @@
 <div class="site">
   <div class="title">
     <a href="/">Qian's Blog</a>
-    <a class="extra" href="/">HOME</a>
-    <a class="extra" href="/">ABOUT</a>
+    <a class="extra" href="/">home</a>
   </div>
   
   {{ content }}
