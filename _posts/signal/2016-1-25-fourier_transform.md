@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 傅里叶
+title: 对傅里叶变换的一些理解
 category: signal
 ---
 
 # {{ page.title }}
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+<img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
