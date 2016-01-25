@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fly
+title: 傅里叶
 category: signal
 ---
 
