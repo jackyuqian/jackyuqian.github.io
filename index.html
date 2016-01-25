@@ -5,9 +5,7 @@ title: Qian's Blog
 
 <div id="home">
   <h1>最新文章</h1>
-    <ul class="posts">
     {% for post in category.last %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-    </ul>
 </div>
