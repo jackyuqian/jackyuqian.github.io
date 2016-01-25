@@ -62,7 +62,7 @@ ul.posts span {
 /* header
 /*****************************************************************************/
 .header {
-    text-align: justify;
+    text-align: left;
     width: 40em;
     margin: 3em auto 2em auto;
     line-height: 1.5em;
