@@ -73,7 +73,7 @@ ul.posts span {
     margin-bottom: 2em;
 }
 .site .title a {
-    font-size: 130%;
+    font-size: 150%;
     color: #a00;
     text-decoration: none;
 }
@@ -99,8 +99,6 @@ ul.posts span {
 /*****************************************************************************/
 /* Posts
 /*****************************************************************************/
-#post {
-}
 /* standard */
 #post p{
     text-indent: 2em;
