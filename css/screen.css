@@ -73,7 +73,7 @@ ul.posts span {
     margin-bottom: 2em;
 }
 .site .title a {
-    font-size: 100%;
+    font-size: 130%;
     color: #a00;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@ ul.posts span {
     font-size: 100%;
     color: #aaa;
     text-decoration: none;
-    margin-left: 1em;
+    /*margin-left: 1em;
 }
 .site .title a.extra:hover {
     color: black;
