@@ -1,0 +1,23 @@
+---
+layout: default
+title: Qian's Blog
+---
+
+<div id="home">
+  <h1>所有文章</h1>
+  {% for category in site.categories %}
+    <h2>{{ category | first }}</h2>
+    <ul class="posts">
+    {% for post in category.last %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+
+  <h1>参考资料</h1>
+  <ul class="posts">
+    <li><a href="http://jekyllcn.com/">Jekyll:</a> Jekyll中文手册</li>
+    <li><a href="http://www.appinn.com/markdown/">Markdown:</a> Markdown语法手册</li>
+    <li><a href="http://www.w3school.com.cn/index.html">Html:</a> 前端设计资料</li>
+  </ul>    
+</div>
