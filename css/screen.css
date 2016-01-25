@@ -59,35 +59,37 @@ ul.posts span {
 }
 
 /*****************************************************************************/
-/* header
+/* Site
 /*****************************************************************************/
-.header {
-    text-align: left;
+.site {
+    text-align: justify;
     width: 40em;
     margin: 3em auto 2em auto;
     line-height: 1.5em;
+}
+.title {
     color: #a00;
     font-weight: bold;
     margin-bottom: 2em;
 }
-.header a {
+.site .title a {
     font-size: 100%;
     color: #a00;
     text-decoration: none;
 }
-.header a:hover {
+.site .title a:hover {
     color: black;
 }
-.header a.extra {
+.site .title a.extra {
     font-size: 100%;
     color: #aaa;
     text-decoration: none;
     margin-left: 1em;
 }
-.header a.extra:hover {
+.site .title a.extra:hover {
     color: black;
 }
-.footer {
+.site .footer {
     font-size: 80%;
     color: #666;
     border-top: 4px solid #eee;
