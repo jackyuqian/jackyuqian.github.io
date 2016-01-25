@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 傅里叶变换之浅见
-category: signal
+category: 信号处理
 ---
 
 # {{ page.title }}
