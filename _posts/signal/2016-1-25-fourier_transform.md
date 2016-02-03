@@ -23,23 +23,22 @@ category: 信号处理
 
 说完系统再说说信号。无论是力学还是电学领域，简谐振动（SHM，Simple harmonic motion）都是一种最基础的运动，从名字也可以看得出来，这种运动是如此的简单、如此的和谐，描述这种运动的方程如下：
 
-<img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=Acos(\omega t+\theta)">
-
+<img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=Acos(\omega t+\theta)">，其中
 <img src="http://www.forkosh.com/mathtex.cgi?\ \omega=\frac{2\pi}{T}=2\pi f">
 
-其中叫做ω为角频率，意思是振动的相位每秒变化的弧度值；Ɵ为初始相位，决定了振动的在零时刻的状态。我们看到此方程中涉及三角函数，学过三角函数的人都知道，这玩意公式繁多，计算相对繁琐。
+上式中&omega;为角频率，意思是振动的相位每秒变化的弧度值；&theta;为初始相位，决定了振动的在零时刻的状态。我们看到此方程中涉及三角函数，学过三角函数的人都知道，这玩意公式繁多，计算相对繁琐。还好有个叫欧拉的人发现了一个公式：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ e^{jx}=cosx+jsinx">
+
+利用上式我们可以轻松的把三角函数和复指数建立联系，于是谐振的运动方程就有了如下的形式：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=Re\{Ae^{j(\omega t+\theta)}\}">，
+其中Re{*}表示括号内复数的实数部分
 
 
 
 
-<img src="http://www.forkosh.com/mathtex.cgi?\ f(t)=a_{0}+\sum_{n=1}^\infty [a_{n}cos(n\frac{2\pi}{T}t)+b_{n}sin(n\frac{2\pi}{T}t)]">
-
-我们可以应用欧拉公式<img src="http://www.forkosh.com/mathtex.cgi?\ e^{jx}=cosx+jsinx">对上式中的三角函数做一下替换，就得到了傅立叶级数的指数形式。
-
-<img src="http://www.forkosh.com/mathtex.cgi?\ f(t)=a_{0}+\sum_{n=1}^\infty c_{n}e^{jn\frac{2\pi}{T}}t">
 
 
-
-## 傅里叶变换
 
 
