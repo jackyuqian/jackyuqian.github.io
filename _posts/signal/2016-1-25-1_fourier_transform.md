@@ -35,7 +35,7 @@ category: 信号处理
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=Re\{Ae^{j(\omega t+\theta)}\}">，
 其中Re{*}表示括号内复数的实数部分
-![](1_1.png)
+![tuq](http://ceohs.img47.wal8.com/img47/536944_20160203171046/145449133888.png)
 
 
 
