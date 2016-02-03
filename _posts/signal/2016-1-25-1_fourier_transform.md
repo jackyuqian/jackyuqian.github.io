@@ -30,10 +30,12 @@ category: 信号处理
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ e^{jx}=cosx+jsinx">
 
-利用上式我们可以轻松的把三角函数和复指数建立联系，于是谐振的运动方程就有了如下的形式：
+仔细看一下欧拉公式，<img src="http://www.forkosh.com/mathtex.cgi?\ e^{jx}">的轨迹在复平面表现为一个旋转的圆，
+利用欧拉公式我们可以轻松的把三角函数和复指数建立联系，于是谐振的运动方程又了如下的形式：
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=Re\{Ae^{j(\omega t+\theta)}\}">，
 其中Re{*}表示括号内复数的实数部分
+![](1_1.png)
 
 
 
