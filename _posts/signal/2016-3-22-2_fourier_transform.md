@@ -80,7 +80,7 @@ category: 信号处理
 
 则：
 
-<img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty} X(j\Omega) e^{\Omega t}d\Omega">
+<img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=\frac{1}{2\pi}\int_{-\infty}^{+\infty} X(\Omega) e^{j\Omega t}d\Omega">
 
 上述两式互为傅立叶变换对。
 
