@@ -89,9 +89,9 @@ category: 信号处理
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=\sum_{k=-\infty}^{+\infty} a_k \cdot e^{jk\Omega_0t}">
 
-那么离散周期信号是不是也可以分解成无穷多个复指数的和呢？对于离散信号而言，若采样率为Fs，一个信号周期内采样点为N，那么k次谐波对应复指数如下：
+那么离散周期信号是不是也可以分解成无穷多个复指数的和呢？对于离散信号而言，若采周期为Ts，一个信号周期内采样点为N，那么k次谐波对应复指数如下：
 
-<img src="http://www.forkosh.com/mathtex.cgi?\ e^{jk\Omega_0t}|_{t=nT_s}=e^{jk\Omega_0nF_s}=e^{jk\frac{2\pi}{N}n}">
+<img src="http://www.forkosh.com/mathtex.cgi?\ e^{jk\Omega_0t}|_{t=nT_s}=e^{jk\Omega_0nT_s}=e^{jk\frac{2\pi}{N}n}">
 
 先看看连续信号的情况，k+N次谐波对应的复指数如下：
 
@@ -107,13 +107,41 @@ category: 信号处理
 
 图中上部分是k次谐波对应的复指数（只看实部），下部分是k+N次谐波对应的复指数，不难看出对于连续信号，频率增加了N倍，而对于离散信号，因为一个基波周期内采样点个数有限，所以恰好k次和k+N次谐波的采样点重合，也就是说分不清二者有什么区别。
 
-那离散周期信号是否可以表示成这有限几个复指数的和呢？即：
+如果离散周期信号可以表示成这有限几个复指数之和，如下，那么系数ak等于多少？
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(n)=\sum_{k=0}^{N-1} a_k \cdot e^{jk\frac{2\pi}{N}n}">
 
+上式两边同时乘以<img src="http://www.forkosh.com/mathtex.cgi?\ e^{-jr2\pi/Nn}">，则有：
 
+<img src="http://www.forkosh.com/mathtex.cgi?\ x(n)e^{-jr\frac{2\pi}{N}n}=\sum_{k=0}^{N-1} a_k \cdot e^{jk\frac{2\pi}{N}n} \cdot e^{-jr\frac{2\pi}{N}n}">
 
+上式两边同时在一个信号周期内求和，则有：
 
+<img src="http://www.forkosh.com/mathtex.cgi?\ \sum_{n=0}^{N-1} x(n)e^{-jr\frac{2\pi}{N}n}=\sum_{n=0}^{N-1} \sum_{k=0}^{N-1} a_k \cdot e^{j(k-r)\frac{2\pi}{N}n}">
+
+交换求和顺序，则有：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ \sum_{n=0}^{N-1} x(n)e^{-jr\frac{2\pi}{N}n}=\sum_{k=0}^{N-1}a_k \sum_{n=0}^{N-1} \cdot e^{j(k-r)\frac{2\pi}{N}n}">
+
+由于上式右侧求和号内的复指数周期为N/(k-r)，且在一个周期内对其积分，结果为零，所以有：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ \sum_{n=0}^{N-1} e^{j(k-r)\frac{2\pi}{N}n}=\begin{cases} N,k=r\\ 0,k\not=r \end{cases}">
+
+因此：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ \sum_{n=0}^{N-1} x(n)e^{-jr\frac{2\pi}{N}n}=a_k|_{k=r}N=a_rN">
+
+至此已经求出ak：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ a_k=\frac{1}{N}\sum_{n=0}^{N-1} x(n)e^{-jk\frac{2\pi}{N}n}">
+
+对于连续信号而言，角频率&Omega;表示每秒转过的角度；而对于离散信号而言，同样定义一个角频率&omega;，表示每拍转过的角度，如下：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ \omega_0=\Omega_0 \cdot T_s=\frac{2\pi}{T_0}T_s=\frac{2\pi}{N}">
+
+则：
+
+<img src="http://www.forkosh.com/mathtex.cgi?\ a_k=\frac{1}{N}\sum_{n=0}^{N-1} x(n)e^{-jk\omega_0 n}">
 
 若记：
 
