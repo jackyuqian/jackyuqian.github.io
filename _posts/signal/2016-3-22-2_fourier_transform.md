@@ -89,7 +89,7 @@ category: 信号处理
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(t)=\sum_{k=-\infty}^{+\infty} a_k \cdot e^{jk\Omega_0t}">
 
-那么离散周期信号是不是也可以分解成无穷多个复指数的和呢？对于离散信号而言，若采周期为Ts，一个信号周期内采样点为N，那么k次谐波对应复指数如下：
+那么离散周期信号是不是也可以分解成无穷多个复指数的和呢？对于离散信号而言，若采样周期为Ts，一个信号周期内采样点为N，那么k次谐波对应复指数如下：
 
 <img src="http://www.forkosh.com/mathtex.cgi?\ e^{jk\Omega_0t}|_{t=nT_s}=e^{jk\Omega_0nT_s}=e^{jk\frac{2\pi}{N}n}">
 
