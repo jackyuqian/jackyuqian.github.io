@@ -196,4 +196,3 @@ category: 信号处理
 <img src="http://www.forkosh.com/mathtex.cgi?\ x(n)=\frac{1}{2\pi}\int_{0}^{2\pi} X(\omega)e^{j\omega n}d\omega">
 
 同样的，离散非周期信号的傅里叶变换也是周期的，周期为2π。
-Demo Version, Only convert first 5 files at one time, Please buy now!Demo Version, Only convert first 5 files at one time, Please buy now!
