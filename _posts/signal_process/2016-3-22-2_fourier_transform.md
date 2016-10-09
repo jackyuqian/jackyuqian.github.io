@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: 信号处理之浅见（二）：傅里叶变换
 category: 信号处理
@@ -103,7 +103,7 @@ category: 信号处理
 
 显然，对于离散信号而言，复指数信号是周期出现的，周期是N，也就是说只有N中不同频率的复指数，并非连续信号那样有无数种！这是怎么造成的？看看下图应该就明白了：
 
-![2-1](http://ceohs.img47.wal8.com/img47/536944_20160203171046/145881588141.png)
+![2-1](https://github.com/jackyuqian/jackyuqian.github.io/blob/master/_posts/signal_process/img/2_1.png?raw=true)
 
 图中上部分是k次谐波对应的复指数（只看实部），下部分是k+N次谐波对应的复指数，不难看出对于连续信号，频率增加了N倍，而对于离散信号，因为一个基波周期内采样点个数有限，所以恰好k次和k+N次谐波的采样点重合，也就是说分不清二者有什么区别。
 
