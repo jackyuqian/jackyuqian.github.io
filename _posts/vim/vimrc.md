@@ -1,9 +1,41 @@
 ---
 layout: post
-title: 信号处理之浅见（一）：写在前面的话
+title: VIMRC
 category: VIM
 ---
 
 # {{ page.title }}
+" Color Scheme
+colorscheme desert
 
-asdfasdfa
+" Syntax Highlight
+filetype on
+filetype plugin on
+filetype indent on
+syntax enable
+
+" No Backup
+set nobackup
+
+" Indent
+set autoindent
+set cindent
+set shiftwidth=4
+
+" Tab Stop
+set tabstop=4
+set softtabstop=4
+set expandtab
+
+" Line Number
+set nu
+
+" Search
+set hlsearch
+set incsearch
+
+" Mouse Enable
+set mouse=a
+
+" Bottom Information
+set ruler
