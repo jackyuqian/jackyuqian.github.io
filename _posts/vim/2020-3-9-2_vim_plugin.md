@@ -31,6 +31,7 @@ Plug 'scrooloose/nerdtree'
 call plug#end()
 ~~~
 
+
 Commands                            |   Command	Description
 -                                   |   -
 PlugInstall [name ...] [#threads]   |   Install plugins
