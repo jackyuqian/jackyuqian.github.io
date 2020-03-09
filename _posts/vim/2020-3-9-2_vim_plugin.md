@@ -6,15 +6,19 @@ category: VIM
 
 # {{ page.title }}
 
-# vim-plug介绍
+## vim-plug介绍
 
 A minimalist Vim plugin manager. See [git repo](https://github.com/junegunn/vim-plug).
 
-# vim-plug的安装
+<br>
+
+## vim-plug的安装
 
 Download [plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) and put it in the ".vim/autoload" directory.
 
-# 插件的安装
+<br>
+
+## 插件的安装
 
 Add a vim-plug section to your `~/.vimrc`
 
@@ -30,8 +34,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 call plug#end()
 ~~~
-  
-# vim-plug命令说明
+
+<br>
+
+## vim-plug命令说明
 
 |   Commands        |   Command	Description
 |   -               |   -
