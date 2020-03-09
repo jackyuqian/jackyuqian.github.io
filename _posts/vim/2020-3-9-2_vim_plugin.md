@@ -29,8 +29,10 @@ Example
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 call plug#end()
-~~~  
-  
+~~~
+
+# vim-plug命令说明
+
 |   Commands                            |   Command	Description
 |   -                                   |   -
 |   PlugInstall [name ...] [#threads]   |   Install plugins
